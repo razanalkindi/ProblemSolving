@@ -1,0 +1,6 @@
+function x(h , r)
+{
+   return (1/3)*Math.PI*Math.pow(r,2)*h;
+}
+
+console.log(x (7,4))

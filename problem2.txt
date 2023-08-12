@@ -1,0 +1,17 @@
+function getNumber(arry,sum)
+{
+  for(let i=0; i<arry.length; i++)
+   {
+	for(var x=i+1; x<arry.length; j++)
+     {
+	if(arry[i] + arry[x] === sum)
+	{
+ return[sum];
+	}
+    }
+}
+return "Error!!"
+
+}
+
+console.log(getNumber([1,2,3,4,5,6],9))
