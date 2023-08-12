@@ -1,0 +1,21 @@
+n1=int{
+       input("Enter first number please : ");
+n2=int{
+       input("Enter secone number please : ");
+n3=int{
+       input("Enter third number please : ");
+
+if(n1>n2 && n1>n3)
+     {
+console.log("The largest number is :" n1);
+     }
+else if(n2>n1 && n2>n3)
+     {
+console.log("The largest number is :" n2);
+     }
+else(n3>n1 && n3>n2)
+     {
+console.log("The largest number is :" n3);
+     }
+
+console.log("Thank you :) !!" );
