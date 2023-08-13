@@ -1,0 +1,9 @@
+function turnGood(x,y)
+{
+return(x+y)>6;
+}
+var chef=7;
+var chefina=4;
+
+var Good = turnGood(chef,chefina);
+console.log(Good!);
