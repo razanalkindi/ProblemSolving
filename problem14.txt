@@ -1,0 +1,35 @@
+function evaluatePostfix(expression) {
+    let stack = [];
+   
+    for (let i = 0; i < expression.length; i++) {
+      let char = expression[i];
+   
+      if (!isNaN(char)) {
+        stack.push(Number(char));
+      } else {
+        let num2 = stack.pop();
+        let num1 = stack.pop();
+   
+        switch (char) {
+          case '+':
+            stack.push(num1 + num2);
+            break;
+          case '-':
+            stack.push(num1 - num2);
+            break;
+          case '*':
+            stack.push(num1 * num2);
+            break;
+          case '/':
+            stack.push(num1 / num2);
+            break;
+        }
+      }
+    }
+   
+    return stack.pop();
+   }
+   
+   let expression = "231*+9-";
+   let result = evaluatePostfix(expression);
+   console.log(result);
