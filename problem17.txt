@@ -1,0 +1,23 @@
+function maxMeetings(start, end) {
+  const n = start.length;
+  const meetings = [];
+
+  for (let i = 0; i < n; i++) {
+    meetings.push([start[i], end[i]]);
+  }
+
+  meetings.sort((a, b) => a[1] - b[1]);
+
+  let count = 1;
+  let endTime = meetings[0][1];
+
+  for (let i = 1; i < n; i++) {
+
+    if (meetings[i][0] > endTime) {
+      count++;
+      endTime = meetings[i][1];
+    }
+  }
+
+  return count;
+}

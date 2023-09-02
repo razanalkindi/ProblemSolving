@@ -1,0 +1,3 @@
+function checkPowerOfTwo(N) {
+  return (N & (N - 1)) === 0;
+}
